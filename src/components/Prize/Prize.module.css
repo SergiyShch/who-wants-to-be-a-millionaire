@@ -1,0 +1,79 @@
+.prize {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 32px;
+}
+
+.prize::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--black-40);
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+  z-index: -1;
+}
+
+.hexSvg {
+  height: 100%;
+  width: 100%;
+  max-width: 240px;
+}
+
+.hexPath {
+  fill: var(--white);
+  stroke: var(--black-40);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 24px;
+  z-index: 1;
+}
+
+/* States */
+
+.guaranteed .hexPath {
+  stroke: var(--orange-100);
+}
+
+.guaranteed .content {
+  color: var(--orange-100);
+}
+
+.guaranteed::before {
+  background-color: var(--orange-100);
+}
+
+.passed .hexPath {
+  stroke: var(--black-40);
+}
+
+.passed .content {
+  color: var(--black-40);
+}
+
+@media (min-width: 768px) {
+  .prize {
+    height: 40px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+}

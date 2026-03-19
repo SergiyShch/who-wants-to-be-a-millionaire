@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import "../styles/globals.css";
 import React from "react";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Who Wants to Be a Millionaire",
@@ -14,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
