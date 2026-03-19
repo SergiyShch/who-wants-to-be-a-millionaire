@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "eslint && tsc --noEmit && jest && next build",
+    "build": "eslint && tsc --noEmit && NODE_ENV=test jest && next build",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
