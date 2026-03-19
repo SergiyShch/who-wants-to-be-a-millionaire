@@ -10,7 +10,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint",
+    "*.{js,mjs}": "eslint"
   },
   "dependencies": {
     "next": "16.1.7",
@@ -28,8 +33,10 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.7",
     "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "ts-jest": "^29.4.6",
     "typescript": "^5"
