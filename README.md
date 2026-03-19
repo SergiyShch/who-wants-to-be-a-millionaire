@@ -9,6 +9,7 @@ A "Who Wants to Be a Millionaire" game built with Next.js, React, and TypeScript
 - **TypeScript** (strict mode)
 - **Jest** + React Testing Library
 - **ESLint** + **Prettier**
+- **Husky** + **lint-staged** (git hooks)
 - Plain CSS (no frameworks)
 
 ## Getting Started
@@ -16,34 +17,45 @@ A "Who Wants to Be a Millionaire" game built with Next.js, React, and TypeScript
 ### Prerequisites
 
 - Node.js 18+
-- npm
+- pnpm
 
 ### Installation
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Deployment
+
+The project is deployed on [Vercel](https://vercel.com). Every push to `main` triggers a production build.
+
 ## Scripts
 
-| Command              | Description                  |
-| -------------------- | ---------------------------- |
-| `npm run dev`        | Start development server     |
-| `npm run build`      | Create production build      |
-| `npm start`          | Start production server      |
-| `npm run lint`       | Run ESLint                   |
-| `npm run format`     | Format code with Prettier    |
-| `npm run format:check` | Check formatting           |
-| `npm test`           | Run tests                    |
-| `npm run test:watch` | Run tests in watch mode      |
+| Command                | Description                                      |
+| ---------------------- | ------------------------------------------------ |
+| `pnpm dev`             | Start development server                         |
+| `pnpm build`           | Lint, type-check, test, then create production build |
+| `pnpm start`           | Start production server                          |
+| `pnpm lint`            | Run ESLint                                       |
+| `pnpm format`          | Format code with Prettier                        |
+| `pnpm format:check`    | Check formatting                                 |
+| `pnpm test`            | Run tests                                        |
+| `pnpm test:watch`      | Run tests in watch mode                          |
+
+## Git Hooks
+
+Managed by Husky and lint-staged:
+
+- **Pre-commit**: runs ESLint on staged `.ts`, `.tsx`, `.js`, `.mjs` files
+- **Pre-push**: runs all unit tests
 
 ## Game Configuration
 
