@@ -46,6 +46,11 @@
 
 @media (max-width: 768px) {
   .main {
+    /*experimenting with new css units on mobile browsers*/
+    min-height: 100dvh;
+  }
+
+  .main {
     padding: 80px 16px 48px;
     align-items: stretch;
   }

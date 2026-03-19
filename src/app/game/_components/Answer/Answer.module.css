@@ -9,6 +9,7 @@
   padding: 0 16px;
   max-width: 405px;
   outline: none;
+  color: var(--black-100);
 }
 
 .answer:disabled {
