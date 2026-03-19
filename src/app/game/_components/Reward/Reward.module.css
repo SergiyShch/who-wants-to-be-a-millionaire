@@ -1,22 +1,10 @@
 .reward {
+  composes: line from "../../../../styles/hexLine.module.css";
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
   height: 40px;
-}
-
-.reward::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--black-40);
-  transform: translateY(-50%);
-  transition: background-color 0.2s ease;
-  z-index: 0;
 }
 
 .hexSvg {

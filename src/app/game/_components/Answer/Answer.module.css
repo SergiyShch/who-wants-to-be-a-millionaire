@@ -1,4 +1,5 @@
 .answer {
+  composes: line from "../../../../styles/hexLine.module.css";
   position: relative;
   width: 100%;
   min-height: 72px;
@@ -12,19 +13,6 @@
 
 .answer:disabled {
   color: var(--black-100);
-}
-
-.answer::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--black-40);
-  transform: translateY(-50%);
-  transition: background-color 0.2s ease;
-  z-index: 0;
 }
 
 .hexSvg {

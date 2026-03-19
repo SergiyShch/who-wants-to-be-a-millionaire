@@ -122,10 +122,12 @@ export default function useGame(config: GameConfig) {
     [state.currentQuestionIndex],
   );
 
-  // timers clean up when component unmounts
+  // timers clean up when the component unmounts
   useEffect(() => {
     return () => {
-      timerRef.current && clearTimeout(timerRef.current);
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
     };
   }, []);
 
