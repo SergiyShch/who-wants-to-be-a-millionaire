@@ -1,11 +1,12 @@
 .answer {
   position: relative;
-  width: 50%;
-  height: 72px;
+  width: 100%;
+  min-height: 72px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0 16px;
+  max-width: 405px;
 }
 
 .answer::before {
@@ -18,12 +19,15 @@
   background-color: var(--black-40);
   transform: translateY(-50%);
   transition: background-color 0.2s ease;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hexSvg {
+  position: absolute;
+  inset: 0 16px;
   height: 100%;
-  width: 100%;
+  width: calc(100% - 32px);
+  z-index: 1;
 }
 
 .hexPath {
@@ -37,19 +41,21 @@
 }
 
 .content {
-  position: absolute;
-  inset: 0;
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 0 48px;
+  min-height: inherit;
+  padding: 8px 32px;
   font-size: 20px;
-  z-index: 1;
+  z-index: 2;
+  text-align: left;
 }
 
 .label {
   color: var(--orange-100);
   margin-right: 8px;
   font-weight: 600;
+  min-width: 16px;
 }
 
 /* States */
@@ -80,14 +86,13 @@
   background-color: var(--red-100);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .answer {
-    width: 100%;
-    height: 56px;
+    min-height: 56px;
   }
 
   .content {
-    padding: 0 40px;
+    padding: 0 24px;
     font-size: inherit;
   }
 }

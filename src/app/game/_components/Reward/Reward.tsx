@@ -1,20 +1,20 @@
 import HexShape from "@/components/HexShape/HexShape";
-import styles from "./Prize.module.css";
+import styles from "./Reward.module.css";
 
-type PrizeVariant = "default" | "passed" | "guaranteed";
+type RewardVariant = "default" | "passed" | "guaranteed";
 
-interface PrizeProps {
-  variant?: PrizeVariant;
+interface RewardProps {
+  variant?: RewardVariant;
   amount: string;
   className?: string;
 }
 
-export default function Prize({
+export default function Reward({
   variant = "default",
   amount,
   className,
-}: PrizeProps) {
-  const classes = [styles.prize, styles[variant], className]
+}: RewardProps) {
+  const classes = [styles.reward, styles[variant], className]
     .filter(Boolean)
     .join(" ");
 

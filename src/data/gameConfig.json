@@ -1,0 +1,150 @@
+{
+  "rewards": [
+    "$500",
+    "$1,000",
+    "$2,000",
+    "$4,000",
+    "$8,000",
+    "$16,000",
+    "$32,000",
+    "$64,000",
+    "$125,000",
+    "$250,000",
+    "$500,000",
+    "$1,000,000"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What planet is closest to the Sun?",
+      "answers": [
+        { "id": "A", "text": "Venus" },
+        { "id": "B", "text": "Mercury" },
+        { "id": "C", "text": "Mars" },
+        { "id": "D", "text": "Earth" }
+      ],
+      "correctAnswerIds": ["B"]
+    },
+    {
+      "id": "q2",
+      "text": "How many legs does a spider have?",
+      "answers": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "10" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "12" }
+      ],
+      "correctAnswerIds": ["C"]
+    },
+    {
+      "id": "q3",
+      "text": "What is the largest ocean on Earth?",
+      "answers": [
+        { "id": "A", "text": "Atlantic Ocean" },
+        { "id": "B", "text": "Indian Ocean" },
+        { "id": "C", "text": "Arctic Ocean" },
+        { "id": "D", "text": "Pacific Ocean" }
+      ],
+      "correctAnswerIds": ["D"]
+    },
+    {
+      "id": "q4",
+      "text": "In what year did the Titanic sink?",
+      "answers": [
+        { "id": "A", "text": "1905" },
+        { "id": "B", "text": "1912" },
+        { "id": "C", "text": "1920" },
+        { "id": "D", "text": "1898" }
+      ],
+      "correctAnswerIds": ["B"]
+    },
+    {
+      "id": "q5",
+      "text": "What is the chemical symbol for gold?",
+      "answers": [
+        { "id": "A", "text": "Gd" },
+        { "id": "B", "text": "Go" },
+        { "id": "C", "text": "Au" },
+        { "id": "D", "text": "Ag" }
+      ],
+      "correctAnswerIds": ["C"]
+    },
+    {
+      "id": "q6",
+      "text": "Which planet in our solar system has the most moons?",
+      "answers": [
+        { "id": "A", "text": "Jupiter" },
+        { "id": "B", "text": "Saturn" },
+        { "id": "C", "text": "Neptune" },
+        { "id": "D", "text": "Uranus" }
+      ],
+      "correctAnswerIds": ["B"]
+    },
+    {
+      "id": "q7",
+      "text": "Who painted the Mona Lisa?",
+      "answers": [
+        { "id": "A", "text": "Michelangelo" },
+        { "id": "B", "text": "Raphael" },
+        { "id": "C", "text": "Leonardo da Vinci" },
+        { "id": "D", "text": "Donatello" }
+      ],
+      "correctAnswerIds": ["C"]
+    },
+    {
+      "id": "q8",
+      "text": "What is the smallest country in the world by area?",
+      "answers": [
+        { "id": "A", "text": "Monaco" },
+        { "id": "B", "text": "San Marino" },
+        { "id": "C", "text": "Liechtenstein" },
+        { "id": "D", "text": "Vatican City" }
+      ],
+      "correctAnswerIds": ["D"]
+    },
+    {
+      "id": "q9",
+      "text": "What is the approximate speed of light?",
+      "answers": [
+        { "id": "A", "text": "150,000 km/s" },
+        { "id": "B", "text": "300,000 km/s" },
+        { "id": "C", "text": "500,000 km/s" },
+        { "id": "D", "text": "1,000,000 km/s" }
+      ],
+      "correctAnswerIds": ["B"]
+    },
+    {
+      "id": "q10",
+      "text": "In which year was the first email sent?",
+      "answers": [
+        { "id": "A", "text": "1965" },
+        { "id": "B", "text": "1971" },
+        { "id": "C", "text": "1980" },
+        { "id": "D", "text": "1975" }
+      ],
+      "correctAnswerIds": ["B"]
+    },
+    {
+      "id": "q11",
+      "text": "What is the longest river in Africa?",
+      "answers": [
+        { "id": "A", "text": "Congo" },
+        { "id": "B", "text": "Niger" },
+        { "id": "C", "text": "Nile" },
+        { "id": "D", "text": "Zambezi" }
+      ],
+      "correctAnswerIds": ["C"]
+    },
+    {
+      "id": "q12",
+      "text": "How many confirmed elements are in the periodic table?",
+      "answers": [
+        { "id": "A", "text": "112" },
+        { "id": "B", "text": "118" },
+        { "id": "C", "text": "124" },
+        { "id": "D", "text": "108" }
+      ],
+      "correctAnswerIds": ["B"]
+    }
+  ]
+}

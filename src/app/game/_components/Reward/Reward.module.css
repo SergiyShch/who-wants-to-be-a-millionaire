@@ -1,4 +1,4 @@
-.prize {
+.reward {
   display: flex;
   justify-content: center;
   position: relative;
@@ -6,7 +6,7 @@
   height: 40px;
 }
 
-.prize::before {
+.reward::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -16,13 +16,14 @@
   background-color: var(--black-40);
   transform: translateY(-50%);
   transition: background-color 0.2s ease;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hexSvg {
   height: 100%;
   width: 100%;
   max-width: 240px;
+  z-index: 1;
 }
 
 .hexPath {
@@ -69,8 +70,8 @@
   color: var(--black-40);
 }
 
-@media (max-width: 768px) {
-  .prize {
+@media (max-width: 480px) {
+  .reward {
     height: 32px;
   }
 
