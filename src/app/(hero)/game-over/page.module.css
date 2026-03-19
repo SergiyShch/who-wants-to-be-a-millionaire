@@ -1,0 +1,13 @@
+.subtitle {
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}

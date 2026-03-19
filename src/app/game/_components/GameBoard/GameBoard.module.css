@@ -4,20 +4,24 @@
   min-height: 100vh;
   background-color: var(--black-5);
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 376px;
   height: 100%;
+  max-width: 1440px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 133px 80px 122px;
+  justify-content: space-around;
+  padding: 200px 80px 122px;
   gap: 24px;
+  min-width: 1064px;
 }
 
 .header {
@@ -64,6 +68,25 @@
   flex-direction: column;
   gap: 8px;
   padding: 24px 0;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    display: block;
+  }
+
+  .content {
+    max-width: unset;
+  }
+
+  .main {
+    min-width: unset;
+    padding: 133px 80px 122px;
+  }
+
+  .sidebar {
+    background-color: var(--white);
+  }
 }
 
 @media (max-width: 1024px) {

@@ -7,6 +7,11 @@
   cursor: pointer;
   padding: 0 16px;
   max-width: 405px;
+  outline: none;
+}
+
+.answer:disabled {
+  color: var(--black-100);
 }
 
 .answer::before {
